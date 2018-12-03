@@ -1,0 +1,158 @@
+.backgroundContainer {
+            width: 100%;
+            height: 100%;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: url("stardust.png") black;
+            z-index: -10;
+            position: absolute;
+        }
+
+        .linkIconNav {
+        }
+
+            .linkIconNav ul {
+                margin: 0;
+                padding: 0;
+                text-align: center;
+            }
+
+                .linkIconNav ul li {
+                    display: inline-block;
+                }
+
+                    .linkIconNav ul li .fa-stack-1x {
+                        transition: color 0.15s ease, text-shadow 0.15s ease;
+                        -webkit-transition: color 0.15s ease, text-shadow 0.15s ease;
+                        text-shadow: 0 0 0.5em rgba(200,200,200,0.5);
+                    }
+
+                    .linkIconNav ul li:hover .fa-stack-1x {
+                        transition: color 0.15s ease, text-shadow 0.15s ease;
+                        -webkit-transition: color 0.15s ease, text-shadow 0.15s ease;
+                        color: rgb(246, 179, 28);
+                        text-shadow: 0 0 1em rgba(246, 179, 28,0.8);
+                    }
+
+                        .linkIconNav ul li:hover .fa-stack-1x.fa-globe {
+                            color: rgb(46, 130, 209);
+                            text-shadow: 0 0 1em rgba(46, 130, 209, 0.8);
+                        }
+
+                        .linkIconNav ul li:hover .fa-stack-1x.fa-facebook {
+                            color: rgb(60, 100, 185);
+                            text-shadow: 0 0 1em rgba(60, 100, 185,0.8);
+                        }                   
+
+                        .linkIconNav ul li:hover .fa-stack-1x.fa-github {
+                            color: rgb(64,120,192);
+                            text-shadow: 0 0 1em rgba(64,120,192,0.8);
+                        }
+
+                        .linkIconNav ul li:hover .fa-stack-1x.fa-linkedin {
+                            color: rgb(27,134,188);
+                            text-shadow: 0 0 1em rgba(27,134,188,0.8);
+                        }
+
+                        .linkIconNav ul li:hover .fa-stack-1x.fa-skype {
+                            color: rgb(0,175,240);
+                            text-shadow: 0 0 1em rgba(0,175,240,0.8);
+                        }
+
+                       
+
+        .fa-stack-2x {
+            color: transparent;
+        }
+
+        .bgCover {
+            z-index: 1;
+           /* background: rgba(246, 179, 28, 0.17) url("binding-dark.png");*/
+            background: rgba(246, 179, 28,0.8);
+            background-repeat: repeat;
+            height: 100%;
+            width: 100%;
+            opacity: 1;
+            position: absolute;
+            background-size: 5em 15em;
+        }
+
+        h1, h2 {
+            font-family: "Electrolize", sans-serif;
+            position: absolute;
+            left: 0;
+            right: 0;
+            text-align: center;
+            color: white;
+            white-space: nowrap;
+        }
+
+        h1 {
+            top: -2em;
+            font-size: 2em;
+        }
+
+        h2 {
+            bottom: -2.25em;
+            font-size: 1em;
+        }
+
+            h2:before, h2:after {
+                content: "";
+                margin-right: -100%;
+            }
+
+        .contactCard {
+            width: auto;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+            max-width: 90vw;
+            padding: 1em;
+        }
+
+            .contactCard .cardContents {
+                height: 100%;
+                width: 100%;
+            }
+
+        canvas.contentBackground {
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            z-index: -1;
+            top: 0;
+            left: 0;
+        }
+
+/*.backgroundContainer .atmosphere {
+}*/
+        .bG{
+
+            z-index: -9;
+            /* midnight 0.85, midday 1 */
+            opacity: 1;
+            height: 100%;
+            width: 100%;
+            background: rgba(0, 0, 0, 0);
+            /* Old Browsers */
+            background: -moz-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.23) 17%, rgba(0, 6, 12, 0.33) 24%, rgba(0, 30, 64, 0.63) 55%, rgba(0, 57, 122, 0.95) 89%, rgba(70, 63, 92, 1) 94%, rgba(153, 70, 56, 1) 100%);
+            /* FF3.6+ */
+            background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(0, 0, 0, 0)), color-stop(17%, rgba(0, 0, 0, 0.23)), color-stop(24%, rgba(0, 6, 12, 0.33)), color-stop(55%, rgba(0, 30, 64, 0.63)), color-stop(89%, rgba(0, 57, 122, 0.95)), color-stop(94%, rgba(70, 63, 92, 1)), color-stop(100%, rgba(153, 70, 56, 1)));
+            /* Chrome, Safari4+ */
+            background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.23) 17%, rgba(0, 6, 12, 0.33) 24%, rgba(0, 30, 64, 0.63) 55%, rgba(0, 57, 122, 0.95) 89%, rgba(70, 63, 92, 1) 94%, rgba(153, 70, 56, 1) 100%);
+            /* Chrome10+,Safari5.1+ */
+            background: -o-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.23) 17%, rgba(0, 6, 12, 0.33) 24%, rgba(0, 30, 64, 0.63) 55%, rgba(0, 57, 122, 0.95) 89%, rgba(70, 63, 92, 1) 94%, rgba(153, 70, 56, 1) 100%);
+            /* Opera 11.10+ */
+            background: -ms-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.23) 17%, rgba(0, 6, 12, 0.33) 24%, rgba(0, 30, 64, 0.63) 55%, rgba(0, 57, 122, 0.95) 89%, rgba(70, 63, 92, 1) 94%, rgba(153, 70, 56, 1) 100%);
+            /* IE 10+ */
+            background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.23) 17%, rgba(0, 6, 12, 0.33) 24%, rgba(0, 30, 64, 0.63) 55%, rgba(0, 57, 122, 0.95) 89%, rgba(70, 63, 92, 1) 94%, rgba(153, 70, 56, 1) 100%);
+            /* W3C */
+            filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#994638', GradientType=0);
+            /* IE6-9 */
+        }
+
